@@ -3,10 +3,11 @@
 ## Description
 Fitness Tracker logs cardio and resistance exercises. You can create a new workout or add to an existing workout when looging various activities. 
 
-![Screen Shot 2021-04-12 at 19 47 03](https://user-images.githubusercontent.com/71572375/114489772-9164d100-9bc8-11eb-88e6-a03c5f57718d.png)
+![Screen Shot 2021-04-12 at 22 12 45](https://user-images.githubusercontent.com/71572375/114502531-c8df7780-9be0-11eb-96d1-2886063bdbdd.png)
 ![Screen Shot 2021-04-12 at 19 47 22](https://user-images.githubusercontent.com/71572375/114489782-93c72b00-9bc8-11eb-89cf-3c585951794b.png)
 ![Screen Shot 2021-04-12 at 19 47 35](https://user-images.githubusercontent.com/71572375/114489792-96c21b80-9bc8-11eb-9dbb-93b31fd49aff.png)
 ![Screen Shot 2021-04-12 at 19 47 48](https://user-images.githubusercontent.com/71572375/114489797-99247580-9bc8-11eb-88fc-c6d8886f454a.png)
+![Screen Shot 2021-04-12 at 22 42 54](https://user-images.githubusercontent.com/71572375/114502480-b2d1b700-9be0-11eb-84fa-1132c9505ba1.png)
 
 ## Table of Contents
 * [Description](#description)
