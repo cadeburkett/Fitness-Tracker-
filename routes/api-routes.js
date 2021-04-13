@@ -6,7 +6,7 @@ const mongoose = require ("mongoose");
 module.exports = (app) => {
 
     app.get("/api/workouts", (req, res) => {
-        Workout.find({})
+        // Workout.find({})
         Workout.aggregate([ { $addFields: { totalDuration: {$sum: "exercises.duration"}}} ])    
         .sort({ date: -1 })
         .then((dbWorkout) => {
@@ -45,11 +45,12 @@ module.exports = (app) => {
     });
 
     app.get("/api/workouts/range", (req, res) => {
-        Workout.find({})
+        // Workout.find({})
         Workout.aggregate([ { $addFields: { totalDuration: {sum: "exercises.duration"}}} ])    
         .sort({ date: -1 })
         .limit(7)
         .then((dbWorkout) => {
+            console.log(dbWorkout)
             res.json(dbWorkout);
         })
         .catch((err) => {
