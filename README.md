@@ -1,7 +1,9 @@
 # Fitness Tracker
   
 ## Description
-Fitness Tracker logs cardio and resistance exercises. You can create a new workout or add to an existing workout when looging various activities. 
+Fitness Tracker logs cardio and resistance exercises. You can create a new workout or add to an existing workout when looging various activities, and see charts of your progress and logged efforts.
+
+Deployed Link: 
 
 ![Screen Shot 2021-04-12 at 22 12 45](https://user-images.githubusercontent.com/71572375/114502531-c8df7780-9be0-11eb-96d1-2886063bdbdd.png)
 ![Screen Shot 2021-04-12 at 19 47 22](https://user-images.githubusercontent.com/71572375/114489782-93c72b00-9bc8-11eb-89cf-3c585951794b.png)

@@ -11,10 +11,15 @@ app.use(express.json());
 app.use(express.static("./public"));
 app.use(morgan("dev"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness-tracker-", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect
+    (process.env.MONGODB_URI || "mongodb://localhost/protected-plains-86730", 
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false
+
+    });
 
 //routes
 require("./routes/api-routes.js")(app);
