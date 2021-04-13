@@ -23,7 +23,7 @@ function generatePalette() {
 
 function populateChart(data) {
   let durations = data.map(({ totalDuration }) => totalDuration);
-  // let pounds = calculateTotalWeight(data);
+  let pounds = calculateTotalWeight(data);
   let workouts = workoutNames(data);
   const colors = generatePalette();
 
@@ -94,7 +94,7 @@ function populateChart(data) {
       datasets: [
         {
           label: 'Pounds',
-          // data: pounds,
+          data: pounds,
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)',
@@ -160,7 +160,7 @@ function populateChart(data) {
         {
           label: 'Exercises Performed',
           backgroundColor: colors,
-          // data: pounds,
+          data: pounds,
         },
       ],
     },
@@ -173,32 +173,32 @@ function populateChart(data) {
   });
 }
 
-// function calculateTotalWeight(data) {
-//   let totals = [];
+function calculateTotalWeight(data) {
+  let totals = [];
 
-//   data.forEach((workout) => {
-//     const workoutTotal = workout.exercises.reduce((total, { type, weight }) => {
-//       if (type === 'resistance') {
-//         return total + weight;
-//       } else {
-//         return total;
-//       }
-//     }, 0);
+  data.forEach((workout) => {
+    const workoutTotal = workout.exercises.reduce((total, { type, weight }) => {
+      if (type === 'resistance') {
+        return total + weight;
+      } else {
+        return total;
+      }
+    }, 0);
 
-//     totals.push(workoutTotal);
-//   });
+    totals.push(workoutTotal);
+  });
 
-//   return totals;
-// }
+  return totals;
+}
 
 function workoutNames(data) {
   let workouts = [];
 
-  // data.forEach((workout) => {
-  //   workout.exercises.forEach((exercise) => {
-  //     workouts.push(exercise.name);
-  //   });
-  // });
+  data.forEach((workout) => {
+    workout.exercises.forEach((exercise) => {
+      workouts.push(exercise.name);
+    });
+  });
 
   // return de-duplicated array with JavaScript `Set` object
   return [...new Set(workouts)];
