@@ -31,10 +31,6 @@ const workoutSchema = new Schema({
             type: Number,
             trim: true,
         },
-        weight: {
-            type: Number,
-            trim: true,
-        },
         sets: {
             type: Number,
             trim: true,
